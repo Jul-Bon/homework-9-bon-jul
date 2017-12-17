@@ -180,10 +180,9 @@ a.learn-more {
     padding-left: 0;
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
-    @include display-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 150px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
 
     li {
         max-width: 200px;
