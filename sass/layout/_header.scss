@@ -81,12 +81,27 @@
 
 .main-banner {
     background: url('../images/main-banner.jpg') bottom center no-repeat;
-    background-position: center;
+    background-size: cover;
     text-align: center;
     padding: 208px 0 174px;
-    margin-top: -30px;
+    border-bottom: 3px solid #d3d3d3;
+    box-sizing: border-box;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 70%;
+        height: 3px;
+        background-color: #df001f;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-bottom: -3px;
+    }
 }
 
 h1 {
     padding-bottom: 90px;
 }
+
