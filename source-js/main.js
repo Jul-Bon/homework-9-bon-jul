@@ -10,6 +10,12 @@ jQuery(document).ready(function () {
 })
 
 jQuery(window).load(function (a) {
+  $('.main-slider').flexslider({
+    animation: 'slide',
+    directionNav: true,
+    slideshowSpeed: 7000,
+  })
+
   jQuery('.flexslider').flexslider({
     animation: 'slide',
     itemWidth: 360,
