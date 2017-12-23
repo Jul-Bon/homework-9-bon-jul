@@ -3,13 +3,17 @@
     border-bottom: 1px solid #dfdfdf;
 }
 
+.members {
+    position: relative;
+}
+
 .members-list {
     @include list-reset;
     list-style-type: none;
 
     .person {
         display: inline-block;
-        width: 370px;
+        width: 360px;
         position: relative;
     }
 
@@ -17,10 +21,6 @@
         width: 100%;
         display: inline-block;
     }
-}
-
-.person:nth-of-type(2) {
-    margin: 0 25px;
 }
 
 .member {
@@ -152,6 +152,9 @@
     margin-right: 30px;
     float: right;
 }
+div.flexslider {
+    width: 100%;
+}
 
 /* Section Our Founder */
 
@@ -172,10 +175,19 @@
     p {
         margin: 0 0 47px 0;
     }
+    a {
+        text-decoration: none;
+    }
 }
 
-a.learn-more {
-    text-decoration: none;
+.popup-content {
+    p{
+        margin-bottom: 20px;
+    }
+
+    a {
+        margin: 30px 0;
+    }
 }
 
 /* Section Popular Songs */

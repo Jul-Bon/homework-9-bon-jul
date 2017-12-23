@@ -11,6 +11,7 @@
     <link href="http://allfont.ru/allfont.css?fonts=droid-sans" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="flexslider/flexslider.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -55,13 +56,15 @@
 <main class="container">
     <section class="our-members">
         <h2>Introducing <span class="decorative-text">our members</span></h2>
-        <ul class="small-button-list">
-            <li class="small-button"><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
-            <li class="small-button"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+        <ul class="small-button-list custom-controls-container">
+            <li class="small-button custom-navigation"><a href="#" class="flex-prev"><i class="fa fa-chevron-left"
+                                                                                        aria-hidden="true"></i></a></li>
+            <li class="small-button custom-navigation"><a href="#" class="flex-next"><i class="fa fa-chevron-right"
+                                                                                        aria-hidden="true"></i></a></li>
         </ul>
-        <div class="members">
-            <ul class="members-list">
-                <li class="person">
+        <div class="members flexslider">
+            <ul class="members-list autoplay slides">
+                <li class="person slide-person">
                     <div class="member">
                         <h4>Jone Smith</h4>
                         <span>Vocal</span>
@@ -86,7 +89,7 @@
                     </div>
                     <img class="member-photo" src="images/members/jone-smith.jpg" alt="Jone Smith">
                 </li>
-                <li class="person">
+                <li class="person slide-person">
                     <div class="member">
                         <h4>Rendi Outhor</h4>
                         <span>Drum</span>
@@ -111,7 +114,82 @@
                     </div>
                     <img class="member-photo" src="images/members/rendi-outhor.jpg" alt="Jone Smith">
                 </li>
-                <li class="person">
+                <li class="person slide-person">
+                    <div class="member">
+                        <h4>Renes Odim</h4>
+                        <span>Guiter</span>
+                        <ul class="social-person">
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i><span class="quantity">32K</span>
+                                </a>
+                            </li>
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i><span class="quantity">32K</span>
+                                </a>
+                            </li>
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i><span
+                                        class="quantity">32K</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="member-photo" src="images/members/renes-odim.jpg" alt="Jone Smith">
+                </li>
+                <li class="person slide-person">
+                    <div class="member">
+                        <h4>Jone Smith</h4>
+                        <span>Vocal</span>
+                        <ul class="social-person">
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i><span class="quantity">32K</span>
+                                </a>
+                            </li>
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i><span class="quantity">32K</span>
+                                </a>
+                            </li>
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i><span
+                                        class="quantity">32K</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="member-photo" src="images/members/jone-smith.jpg" alt="Jone Smith">
+                </li>
+                <li class="person slide-person">
+                    <div class="member">
+                        <h4>Rendi Outhor</h4>
+                        <span>Drum</span>
+                        <ul class="social-person">
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i><span class="quantity">32K</span>
+                                </a>
+                            </li>
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i><span class="quantity">32K</span>
+                                </a>
+                            </li>
+                            <li class="social-person-list">
+                                <a href="#">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i><span
+                                        class="quantity">32K</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="member-photo" src="images/members/rendi-outhor.jpg" alt="Jone Smith">
+                </li>
+                <li class="person slide-person">
                     <div class="member">
                         <h4>Renes Odim</h4>
                         <span>Guiter</span>
@@ -174,13 +252,32 @@
     
     <section class="videos">
         <h2>Latest<span class="decorative-text">videos</span></h2>
-        <ul class="small-button-list">
-            <li class="small-button"><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
-            <li class="small-button"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
-        </ul>
         <div class="video">
-            <iframe width="372" height="290" src="https://www.youtube.com/embed/e8X3ACToii0?controls=0"
-                    frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <div id="videoslider">
+                <ul class="small-button-list custom-controls-container">
+                    <li class="small-button custom-navigation"><a href="#" class="flex-prev"><i
+                            class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+                    <li class="small-button custom-navigation"><a href="#" class="flex-next"><i
+                            class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                </ul>
+                <ul class="slides">
+                    <li>
+                        <iframe width="370" height="290"
+                                src="https://www.youtube.com/embed/e8X3ACToii0?controls=0"
+                                frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe width="370" height="290"
+                                src="https://www.youtube.com/embed/hTWKbfoikeg?rel=0&amp;controls=0&amp;showinfo=0"
+                                frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe width="370" height="290"
+                                src="https://www.youtube.com/embed/8TvsZNc2mJs?rel=0&amp;controls=0&amp;showinfo=0"
+                                frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     
@@ -188,7 +285,22 @@
         <div class="history">
             <h3>Our Founder staying in our hearts</h3>
             <p>1982 <span>cantus </span> Start jurny and now it‘s top class Rock Band in the California.</p>
-            <a href="#" class="learn-more button">Learn more</a>
+            <a href="#" class="learn-more button" id="open-popup">Learn more</a>
+            <div class="popup">
+                <div class="popup-content">
+                    <p>Payback was formed in march 1982 by band leader Ryan.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex mauris, rutrum quis
+                        pulvinar quis, fringilla vitae nisl. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Praesent elementum iaculis neque, consectetur
+                        ultrices libero euismod non. Praesent accumsan lobortis leo, dictum tempus urna luctus ac.
+                        Maecenas porta dui non ligula convallis, eget finibus ligula laoreet.</p>
+                    <p>Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse quam lorem,
+                        nterdum suscipit lacus quis, blandit sollicitudin tortor.</p>
+                    <a href="#" class="close-popup button" id="close-popup">Close</a>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -266,7 +378,10 @@
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="flexslider/jquery.flexslider-min.js"></script>
+<script src="source-js/main.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
