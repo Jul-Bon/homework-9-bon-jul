@@ -12,14 +12,15 @@ jQuery(document).ready(function () {
 jQuery(window).load(function (a) {
   $('.main-slider').flexslider({
     animation: 'slide',
-    directionNav: true,
+    directionNav: false,
+    controlNav: false,
     slideshowSpeed: 7000,
   })
 
   jQuery('.flexslider').flexslider({
     animation: 'slide',
-    itemWidth: 360,
-    itemMargin: 30,
+    itemWidth: 370,
+    itemMargin: 25,
     move: 1,
     controlNav: false,
     controlsContainer: jQuery('.our-members .custom-controls-container'),
@@ -33,6 +34,7 @@ jQuery(window).load(function (a) {
     controlsContainer: jQuery('.videos .custom-controls-container'),
     customDirectionNav: jQuery('.videos .custom-navigation a'),
   })
+
 })
 
 

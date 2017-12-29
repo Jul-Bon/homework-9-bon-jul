@@ -79,9 +79,22 @@
     }
 }
 
-.main-banner {
+.first-bg {
     background: url('../images/main-banner.jpg') bottom center no-repeat;
     background-size: cover;
+}
+
+.second-bg {
+    background: url('../images/main-banner-guitar-player.jpg') bottom center no-repeat;
+    background-size: cover;
+}
+
+.third-bg {
+    background: url('../images/main-banner-concert.jpg') bottom center no-repeat;
+    background-size: cover;
+}
+
+.main-banner {
     text-align: center;
     padding: 208px 0 174px;
     border-bottom: 3px solid #d3d3d3;
@@ -99,21 +112,6 @@
         bottom: 0;
         margin-bottom: -3px;
     }
-}
-
-.clone-1 .main-banner {
-    background: url('../images/main-banner.jpg') bottom center no-repeat;
-    background-size: cover;
-}
-
-.clone-2 .main-banner{
-    background: url('../images/main-banner-concert.jpg') bottom center no-repeat;
-    background-size: cover;
-}
-
-.clone-3 .main-banner {
-    background: url('../images/main-banner-guitar-player.jpg') bottom center no-repeat;
-    background-size: cover;
 }
 
 h1 {
